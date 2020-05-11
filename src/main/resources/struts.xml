@@ -14,7 +14,9 @@
     <constant name="struts.devMode" value="true" />
     <constant name="struts.enable.DynamicMethodInvocation" value="true"/>
 
+    <!--动态调用失败&#45;&#45;&#45;&#45; 用麻烦的办法-->
     <package name="basicstruts" extends="struts-default" >
+        <!--商品-->
         <action name="listProduct" class="productActionBean" method="list">
             <result name="listProduct">WEB-INF/jsp/product/listProduct.jsp</result>
         </action>
