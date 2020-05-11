@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+    <constant name="struts.i18n.encoding" value="UTF-8"></constant>
+
+    <constant name="struts.objectFactory" value="spring"/>
+    <!-- Struts。xml的配置文件 -->
+    <!-- 所有匹配*.action的请求都由struts2处理 -->
+    <constant name="struts.action.extension" value="action,," />
+    <!-- 是否启用开发模式 -->
+    <constant name="struts.devMode" value="true" />
+    <constant name="struts.enable.DynamicMethodInvocation" value="true"/>
+
+    <package name="basicstruts" extends="struts-default" >
+        <action name="listProduct" class="productActionBean" method="list">
+            <result name="listProduct">WEB-INF/jsp/product/listProduct.jsp</result>
+        </action>
+        <action name="addProduct" class="productActionBean" method="add">
+            <result name="listProductAction" type="redirect">listProduct</result>
+        </action>
+        <action name="editProduct" class="productActionBean" method="edit">
+            <result name="editProduct">WEB-INF/jsp/product/editProduct.jsp</result>
+        </action>
+        <action name="deleteProduct" class="productActionBean" method="delete">
+            <result name="listProductAction" type="redirect">listProduct</result>
+        </action>
+        <action name="updateProduct" class="productActionBean" method="update">
+            <result name="listProductAction" type="redirect">listProduct</result>
+        </action>
+        <!--订单-->
+        <action name="listOrder" class="productActionBean" method="list">
+            <result name="listProduct">WEB-INF/jsp/product/listProduct.jsp</result>
+        </action>
+    </package>
+</struts>
