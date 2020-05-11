@@ -3,12 +3,7 @@ package cn.edu.nyist.action;
 import cn.edu.nyist.service.OrderService;
 import org.hibernate.criterion.Order;
 
-/**
- * @ClassName OrderAction
- * @Description TODO
- * @Date 2020/5/11 11:26
- * @Created by typ
- */
+
 public class OrderAction {
 
     Order order;

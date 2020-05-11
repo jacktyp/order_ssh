@@ -13,6 +13,8 @@
 		</id>
 		<!--其他属性-->
 		<property name="name" />
+		<property name="type" />
+		<property name="description" />
 		<property name="price" />
 	</class>
 	

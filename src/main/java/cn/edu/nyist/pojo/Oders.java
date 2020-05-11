@@ -1,14 +1,13 @@
 package cn.edu.nyist.pojo;
 
 
-import java.util.Date;
 
 public class Oders {
     private int id;
-    private int uid;
-    private String pids;
-    private String pnames;
-//    private Date
+    private int user_id;
+    private String product_id;
+    private String createTime;
+    private int status;
 
     public int getId() {
         return id;
@@ -18,27 +17,35 @@ public class Oders {
         this.id = id;
     }
 
-    public int getUid() {
-        return uid;
+    public int getUser_id() {
+        return user_id;
     }
 
-    public void setUid(int uid) {
-        this.uid = uid;
+    public void setUser_id(int user_id) {
+        this.user_id = user_id;
     }
 
-    public String getPids() {
-        return pids;
+    public String getProduct_id() {
+        return product_id;
     }
 
-    public void setPids(String pids) {
-        this.pids = pids;
+    public void setProduct_id(String product_id) {
+        this.product_id = product_id;
     }
 
-    public String getPnames() {
-        return pnames;
+    public String getCreateTime() {
+        return createTime;
     }
 
-    public void setPnames(String pnames) {
-        this.pnames = pnames;
+    public void setCreateTime(String createTime) {
+        this.createTime = createTime;
+    }
+
+    public int getStatus() {
+        return status;
+    }
+
+    public void setStatus(int status) {
+        this.status = status;
     }
 }
